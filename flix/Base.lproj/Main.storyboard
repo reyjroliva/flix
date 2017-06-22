@@ -53,6 +53,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="overviewLabel" destination="hFA-9N-ouH" id="DIU-Ga-vUo"/>
+                                            <outlet property="titleLabel" destination="XX4-Ad-kap" id="9aq-Re-YFw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
