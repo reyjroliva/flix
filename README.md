@@ -32,8 +32,8 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Ways to customize the details view controller so that the background and text are different depending on the movie selected
+2. Other potential options that could be added to the tab bar
 
 ## Video Walkthrough
 
@@ -44,9 +44,7 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
-
-Describe any challenges encountered while building the app.
-
+Some of the challenges I faced during the creation of this app include dealing with merge conflicts on git, creating the network request, and understanding how we were pulling the information about the movies (title, overview, release data, photos) from the JSON file.
 ## Credits
 
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.
