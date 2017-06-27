@@ -26,7 +26,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="159" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2iI-zl-gJH">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.049691020333036739" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="159" id="eeA-MD-Dim" customClass="MovieCell" customModule="flix">
@@ -38,7 +38,6 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wonder Woman" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XX4-Ad-kap">
                                                     <rect key="frame" x="108" y="8" width="259" height="24"/>
-                                                    <color key="backgroundColor" red="0.14337566337293839" green="1" blue="0.95323053010074177" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -52,7 +51,6 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFA-9N-ouH">
                                                     <rect key="frame" x="108" y="40" width="259" height="95.5"/>
-                                                    <color key="backgroundColor" red="0.77884913201188566" green="0.092144863023230106" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -87,7 +85,6 @@
                                 <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.022883419001807681" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="2iI-zl-gJH" secondAttribute="bottom" id="3bR-ic-cdV"/>
                             <constraint firstItem="2iI-zl-gJH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bgf-MG-SK4"/>
@@ -129,17 +126,23 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wonder Women" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqd-LN-cVG">
                                 <rect key="frame" x="111" y="294.5" width="256" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="e93-Yi-Cwk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTI-XP-aMm">
-                                <rect key="frame" x="111" y="326" width="256" height="24"/>
+                                <rect key="frame" x="111" y="326" width="256" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="4ui-J8-4hG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxr-CO-6OU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxr-CO-6OU">
                                 <rect key="frame" x="8" y="368" width="359" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -159,7 +162,7 @@
                             <constraint firstItem="PTI-XP-aMm" firstAttribute="trailing" secondItem="KBh-fX-AWG" secondAttribute="trailingMargin" constant="8" id="fZa-DA-XNF"/>
                             <constraint firstItem="KU4-sE-eEP" firstAttribute="leading" secondItem="KBh-fX-AWG" secondAttribute="leading" id="hAQ-Jo-L69"/>
                             <constraint firstItem="PTI-XP-aMm" firstAttribute="leading" secondItem="erk-GX-PwH" secondAttribute="trailing" constant="8" id="iUm-Bg-1a6"/>
-                            <constraint firstItem="mxr-CO-6OU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PTI-XP-aMm" secondAttribute="bottom" constant="8" id="nFt-Mi-sRT"/>
+                            <constraint firstItem="mxr-CO-6OU" firstAttribute="top" secondItem="PTI-XP-aMm" secondAttribute="bottom" constant="8" id="nFt-Mi-sRT"/>
                             <constraint firstItem="sqd-LN-cVG" firstAttribute="leading" secondItem="erk-GX-PwH" secondAttribute="trailing" constant="8" id="pOq-oe-xrV"/>
                             <constraint firstAttribute="trailing" secondItem="mxr-CO-6OU" secondAttribute="trailing" constant="8" id="rhu-sW-b9m"/>
                             <constraint firstAttribute="trailing" secondItem="KU4-sE-eEP" secondAttribute="trailing" id="ulN-n0-huV"/>
