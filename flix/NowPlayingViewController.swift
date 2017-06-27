@@ -13,7 +13,6 @@ private let reuseIdentifier = "Cell"
 class NowPlayingViewController: UIViewController, UITableViewDataSource{
     
     @IBOutlet weak var tableView: UITableView!
-   
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
@@ -22,7 +21,8 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 50
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(NowPlayingViewController.didPullToRefresh(_:)), for: .valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
