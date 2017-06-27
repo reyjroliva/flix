@@ -33,9 +33,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="158.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wonder Woman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XX4-Ad-kap">
-                                                    <rect key="frame" x="108" y="8" width="259" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wonder Woman" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XX4-Ad-kap">
+                                                    <rect key="frame" x="108" y="8" width="259" height="24"/>
+                                                    <color key="backgroundColor" red="0.14337566337293839" green="1" blue="0.95323053010074177" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -47,9 +47,9 @@
                                                         <constraint firstAttribute="height" constant="142.5" id="u5q-Ne-y51"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFA-9N-ouH">
-                                                    <rect key="frame" x="108" y="36" width="259" height="114"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFA-9N-ouH">
+                                                    <rect key="frame" x="108" y="40" width="259" height="95.5"/>
+                                                    <color key="backgroundColor" red="0.77884913201188566" green="0.092144863023230106" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -57,9 +57,16 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
+                                                <constraint firstItem="XX4-Ad-kap" firstAttribute="top" secondItem="hLT-OI-Xxl" secondAttribute="top" id="3rZ-eu-kUz"/>
                                                 <constraint firstItem="hLT-OI-Xxl" firstAttribute="top" secondItem="AtG-0f-iqn" secondAttribute="top" constant="8" id="CBm-TO-FiN"/>
+                                                <constraint firstAttribute="trailing" secondItem="XX4-Ad-kap" secondAttribute="trailing" constant="8" id="JrM-UN-4mU"/>
                                                 <constraint firstItem="hLT-OI-Xxl" firstAttribute="leading" secondItem="AtG-0f-iqn" secondAttribute="leading" constant="8" id="KFO-3g-Gah"/>
-                                                <constraint firstAttribute="bottom" secondItem="hLT-OI-Xxl" secondAttribute="bottom" constant="8" id="l7j-jj-It0"/>
+                                                <constraint firstItem="XX4-Ad-kap" firstAttribute="leading" secondItem="hLT-OI-Xxl" secondAttribute="trailing" constant="8" id="KFR-Ts-eeH"/>
+                                                <constraint firstItem="hFA-9N-ouH" firstAttribute="leading" secondItem="XX4-Ad-kap" secondAttribute="leading" id="Xm7-ml-vfR"/>
+                                                <constraint firstAttribute="trailing" secondItem="hFA-9N-ouH" secondAttribute="trailing" constant="8" id="aXA-92-SdR"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hFA-9N-ouH" secondAttribute="bottom" constant="8" id="cRp-Ui-gPY"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hLT-OI-Xxl" secondAttribute="bottom" constant="8" id="l7j-jj-It0"/>
+                                                <constraint firstItem="hFA-9N-ouH" firstAttribute="top" secondItem="XX4-Ad-kap" secondAttribute="bottom" constant="8" id="nnN-76-OsV"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
